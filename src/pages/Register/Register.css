@@ -1,0 +1,8 @@
+.label1 {
+    transition: .6s
+}
+.input1:focus + .label1 {
+    top: -1.3rem;
+    font-size: 12px;
+     color: #60a5fa;
+}
