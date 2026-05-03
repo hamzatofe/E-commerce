@@ -1,7 +1,9 @@
 import { useState } from "react";
-import image from "../../../public/images/b.png";
+
 import "./Login.css";
 import { Link } from "react-router-dom";
+import b from "../../../public/images/b.png"
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -61,7 +63,7 @@ const Login = () => {
       </form>
 
         <img
-          src={image}
+          src={b}
           alt=""
           className="w-1/2 h-full hidden md:block object-cover"
         />

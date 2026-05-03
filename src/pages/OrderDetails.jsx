@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-
+import hero1 from "../../public/images/hero1.jpg"
+import hero from "../../public/images/hero.jpg"
 const OrderDetails = () => {
   const { id } = useParams();
   const [orderDetails, setOrderDetails] = useState(null);
@@ -20,14 +21,14 @@ const OrderDetails = () => {
           name: "Shirt",
           price: 110,
           quantity: 2,
-          image: "../../public/images/hero1.jpg",
+          image: hero1,
         },
         {
           productId: "1",
           name: "Jacket",
           price: 120,
           quantity: 1,
-          image: "../../public/images/hero.jpg",
+          image: hero,
         },
       ],
     };

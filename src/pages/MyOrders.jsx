@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import hero3 from "../../public/images/hero3.jpg"
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const MyOrders = () => {
           orderItems: [
             {
               name: "Product 1",
-              image: "../../public/images/hero3.jpg",
+              image: hero3,
             },
           ],
           totalPrice: 100,
@@ -27,7 +27,7 @@ const MyOrders = () => {
           orderItems: [
             {
               name: "Product 1",
-              image: "../../public/images/hero3.jpg",
+              image: hero3,
             },
           ],
           totalPrice: 100,

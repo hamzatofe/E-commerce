@@ -5,106 +5,56 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { Navigation, Autoplay, EffectCoverflow } from "swiper/modules";
+import image1 from "../../../public/images/image1.jpg"
+import image2 from "../../../public/images/image2.jpg"
+import image3 from "../../../public/images/image3.jpg"
+import hero2 from "../../../public/images/hero2.jpg"
+import hero3 from "../../../public/images/hero3.jpg"
+import hero from "../../../public/images/hero3.jpg"
+
 const NewArrivals = () => {
   const newArrivals = [
     {
       _id: "1",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/image1.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: image1, altText: "Stylish jacket" }],
     },
     {
       _id: "2",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/image2.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: image2, altText: "Stylish jacket" }],
     },
     {
       _id: "3",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/image3.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: image3, altText: "Stylish jacket" }],
     },
     {
       _id: "4",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/hero2.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: hero2, altText: "Stylish jacket" }],
     },
     {
       _id: "5",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/hero3.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: hero3, altText: "Stylish jacket" }],
     },
     {
       _id: "6",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/hero.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: hero, altText: "Stylish jacket" }],
     },
     {
       _id: "7",
       name: "Stylish jacket",
       price: 120,
-      images: [
-        {
-          url: "../../../public/images/image1.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
-    },
-    {
-      _id: "8",
-      name: "Stylish jacket",
-      price: 120,
-      images: [
-        {
-          url: "../../../public/images/image1.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
-    },
-    {
-      _id: "8",
-      name: "Stylish jacket",
-      price: 120,
-      images: [
-        {
-          url: "../../../public/images/image1.jpg",
-          altText: "Stylish jacket",
-        },
-      ],
+      images: [{ url: image1, altText: "Stylish jacket" }],
     },
   ];
 
@@ -143,49 +93,36 @@ const NewArrivals = () => {
             slideShadows: false,
           }}
           breakpoints={{
-            100: {
-              slidesPerView: 1,
-            },
-            500: {
-              slidesPerView: 2,
-            },
-            700: {
-              slidesPerView: 3,
-            },
-            850: {
-              slidesPerView: 4,
-            },
-            1200: {
-              slidesPerView: 5,
-            },
+            100: { slidesPerView: 1 },
+            500: { slidesPerView: 2 },
+            700: { slidesPerView: 3 },
+            850: { slidesPerView: 4 },
+            1200: { slidesPerView: 5 },
           }}
           spaceBetween={16}
           className="w-full py-6"
         >
-          {newArrivals.map((item) => {
-            return (
-              <SwiperSlide key={item._id}>
-                <div className="relative overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-lg transition duration-500 hover:-translate-y-1">
-                  <img
-                    src={item.images[0]?.url}
-                    alt={item.images[0]?.altText || item.name}
-                    className="h-[320px] w-full object-cover transition duration-700 hover:scale-105"
-                  />
-
-                  <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-gradient-to-t from-slate-950/95 to-slate-950/30 p-5 text-left text-white backdrop-blur-sm">
-                    <h4 className="text-lg font-semibold tracking-tight">{item.name}</h4>
-                    <p className="mt-1 text-sm text-slate-300">${item.price}</p>
-                    <Link
-                      to={`/product/${item._id}`}
-                      className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-cyan-300 transition hover:text-cyan-100"
-                    >
-                      عرض المنتج
-                    </Link>
-                  </div>
+          {newArrivals.map((item) => (
+            <SwiperSlide key={item._id}>
+              <div className="relative overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-lg transition duration-500 hover:-translate-y-1">
+                <img
+                  src={item.images[0]?.url}
+                  alt={item.images[0]?.altText || item.name}
+                  className="h-[320px] w-full object-cover transition duration-700 hover:scale-105"
+                />
+                <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-gradient-to-t from-slate-950/95 to-slate-950/30 p-5 text-left text-white backdrop-blur-sm">
+                  <h4 className="text-lg font-semibold tracking-tight">{item.name}</h4>
+                  <p className="mt-1 text-sm text-slate-300">${item.price}</p>
+                  <Link
+                    to={`/product/${item._id}`}
+                    className="mt-3 inline-flex items-center gap-2 text-sm font-medium text-cyan-300 transition hover:text-cyan-100"
+                  >
+                    عرض المنتج
+                  </Link>
                 </div>
-              </SwiperSlide>
-            );
-          })}
+              </div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
@@ -193,3 +130,4 @@ const NewArrivals = () => {
 };
 
 export default NewArrivals;
+

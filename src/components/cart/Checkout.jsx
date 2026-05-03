@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PayPalButton from "./PayPalButton";
-
+import image1 from "../../../public/images/image1.jpg"
+import image3 from "../../../public/images/image3.jpg"
 const cart = {
   products: [
     {
@@ -11,7 +12,7 @@ const cart = {
       color: "Blue",
       quantity: 1,
       price: 15,
-      image: "../../../public/images/image1.jpg",
+      image: image1,
     },
     {
       productId: 1,
@@ -20,7 +21,7 @@ const cart = {
       color: "White",
       quantity: 1,
       price: 15,
-      image: "../../../public/images/image3.jpg",
+      image: image3,
     },
   ],
   totalPrice: 200,

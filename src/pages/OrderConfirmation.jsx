@@ -1,3 +1,6 @@
+import hero from "../../public/images/hero.jpg"
+import hero1 from "../../public/images/hero1.jpg"
+
 const checkout = {
   _id: "12321",
   createdAt: new Date(),
@@ -9,7 +12,7 @@ const checkout = {
       size: "M",
       price: 150,
       quantity: 1,
-      image: "../../public/images/hero.jpg",
+      image: hero,
     },
     {
       productId: "2",
@@ -18,7 +21,7 @@ const checkout = {
       size: "M",
       price: 130,
       quantity: 2,
-      image: "../../public/images/hero1.jpg",
+      image: hero1,
     },
   ],
   shippingAddress: {

@@ -20,7 +20,7 @@ import OrderManagement from "./components/admin/OrderManagement";
 
 const App = () => {
   return (
-    <BrowserRouter>
+<BrowserRouter basename="/E-commerce">
       <Toaster position="top-right" />
       <Routes>
         <Route path="/" element={<UserLayout />}>

@@ -16,10 +16,10 @@ const EditProduct = () => {
     gender: "",
     images: [
       {
-        url: "../../../public/images/hero1.jpg",
+        url: "/images/hero1.jpg",
       },
       {
-        url: "../../../public/images/hero1.jpg",
+        url: "/images/hero1.jpg",
       },
     ],
   });

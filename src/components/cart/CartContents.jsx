@@ -1,5 +1,6 @@
 import { RiDeleteBin3Line } from "react-icons/ri";
-
+import image1 from "../../../public/images/image1.jpg"
+import image3 from "../../../public/images/image3.jpg"
 const CartContents = () => {
   const cartProducts = [
     {
@@ -9,7 +10,7 @@ const CartContents = () => {
       color: "Blue",
       quantity: 1,
       price: 15,
-      image: "../../../public/images/image1.jpg",
+      image: image1,
     },
     {
       productId: 1,
@@ -18,7 +19,7 @@ const CartContents = () => {
       color: "White",
       quantity: 1,
       price: 15,
-      image: "../../../public/images/image3.jpg",
+      image: image3,
     },
   ];
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import featured from "../../../public/images/6.jpg";
+import im6 from "../../../public/images/6.jpg"
 const FeautredCollection = () => {
   return (
     <section className="py-16 px-4 lg:px-0">
@@ -25,7 +25,7 @@ const FeautredCollection = () => {
           </div>
           <div className="lg:w-1/2">
             <img
-              src={featured}
+              src={im6}
               alt="featured"
               className="w-full h-full object-cover lg:rounded-tr-3xl lg:rounded-br-3xl"
             />

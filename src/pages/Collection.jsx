@@ -3,6 +3,10 @@ import { FaFilter } from "react-icons/fa";
 import FilterSidebar from "../components/products/FilterSidebar";
 import SortOptions from "../components/products/SortOptions";
 import ProductGrid from "../components/products/ProductGrid";
+import hero from "../../public/images/hero.jpg"
+import hero1 from "../../public/images/hero1.jpg"
+import hero2 from "../../public/images/hero2.jpg"
+import hero3 from "../../public/images/hero3.jpg"
 const Collection = () => {
   const [products, setProducts] = useState([]);
   const sidebarRef = useRef(null);
@@ -31,70 +35,31 @@ const Collection = () => {
           _id: 5,
           name: "product 1",
           price: 100,
-          images: [
-            { url: "../../../public/images/hero3.jpg", altText: "image" },
-          ],
+          images: [{ url: hero3, altText: "image" }],
         },
         {
           _id: 6,
           name: "product 2",
           price: 100,
-          images: [
-            { url: "../../../public/images/hero2.jpg", altText: "image" },
-          ],
+          images: [{ url: hero2, altText: "image" }],
         },
         {
           _id: 7,
           name: "product 3",
           price: 100,
-          images: [
-            { url: "../../../public/images/hero1.jpg", altText: "image" },
-          ],
+          images: [{ url: hero1, altText: "image" }],
         },
         {
           _id: 8,
           name: "product 4",
           price: 100,
-          images: [
-            { url: "../../../public/images/hero.jpg", altText: "image" },
-          ],
+          images: [{ url: hero, altText: "image" }],
         },
-        {
-            _id: 8,
-            name: "product 4",
-            price: 100,
-            images: [
-              { url: "../../../public/images/hero.jpg", altText: "image" },
-            ],
-          },
-          {
-            _id: 8,
-            name: "product 4",
-            price: 100,
-            images: [
-              { url: "../../../public/images/hero.jpg", altText: "image" },
-            ],
-          },
-          {
-            _id: 8,
-            name: "product 4",
-            price: 100,
-            images: [
-              { url: "../../../public/images/hero.jpg", altText: "image" },
-            ],
-          },
-          {
-            _id: 8,
-            name: "product 4",
-            price: 100,
-            images: [
-              { url: "../../../public/images/hero.jpg", altText: "image" },
-            ],
-          },
       ];
       setProducts(fetchedProducts);
     }, 1000);
   }, []);
+
   return (
     <div className="flex flex-col lg:flex-row ">
       <button
@@ -121,3 +86,4 @@ const Collection = () => {
 };
 
 export default Collection;
+

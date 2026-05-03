@@ -35,22 +35,23 @@ const Hero = () => {
 
         <div className="relative grid gap-6 sm:grid-cols-2">
           <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-4 shadow-[0_30px_80px_rgba(15,23,42,0.45)] backdrop-blur-xl">
-            <img src={hero} alt="Vacation style 1" className="h-[260px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
+<img src={hero} alt="Vacation style 1" className="h-[260px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
             <div className="mt-4 text-left">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Beach edit</p>
               <h2 className="mt-3 text-xl font-semibold text-white">Summer essentials</h2>
             </div>
           </div>
           <div className="relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-4 shadow-[0_30px_80px_rgba(15,23,42,0.35)] backdrop-blur-xl sm:-mt-10">
-            <img src={hero2} alt="Vacation style 2" className="h-[260px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
+<img src={hero2} alt="Vacation style 2" className="h-[260px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
             <div className="mt-4 text-left">
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Travel luxe</p>
               <h2 className="mt-3 text-xl font-semibold text-white">Jet-set looks</h2>
             </div>
           </div>
           <div className="sm:col-span-2 relative overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-4 shadow-[0_30px_80px_rgba(15,23,42,0.25)] backdrop-blur-xl">
-            <img src={hero3} alt="Vacation style 3" className="h-[320px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
             <div className="mt-4 text-left">
+<img src={hero3} alt="Vacation style 2" className="h-[260px] w-full rounded-3xl object-cover transition duration-700 hover:scale-105" />
+
               <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Weekend trip</p>
               <h2 className="mt-3 text-xl font-semibold text-white">Ready-to-go outfits</h2>
             </div>

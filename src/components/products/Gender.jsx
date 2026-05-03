@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import women from "../../../public/images/hero1.jpg";
+import hero1 from "../../../public/images/hero1.jpg";
 import man from "../../../public/images/man.jpg";
 const Gender = () => {
   return (
@@ -19,11 +19,11 @@ const Gender = () => {
 
         <div className="grid gap-8 md:grid-cols-2">
           <Link
-            to="/collection/forwomen"
+            to="/collections/forwomen"
             className="group relative overflow-hidden rounded-[32px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.12)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_35px_90px_rgba(15,23,42,0.18)]"
           >
             <img
-              src={women}
+              src={hero1}
               alt="Women's collection"
               className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
             />
@@ -45,7 +45,7 @@ const Gender = () => {
           </Link>
 
           <Link
-            to="/collection/forman"
+            to="/collections/forman"
             className="group relative overflow-hidden rounded-[32px] bg-white shadow-[0_30px_80px_rgba(15,23,42,0.12)] transition duration-500 hover:-translate-y-1 hover:shadow-[0_35px_90px_rgba(15,23,42,0.18)]"
           >
             <img

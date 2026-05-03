@@ -1,7 +1,8 @@
 import { useState } from "react";
-import image from "../../../public/images/hero1.jpg";
+
 import './Register.css'
 import { Link } from "react-router-dom";
+import hero1 from "../../../public/images/hero1.jpg"
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -77,7 +78,7 @@ const Register = () => {
       </form>
 
       <img
-        src={image}
+        src={hero1}
         alt=""
         className="w-1/2 h-full hidden md:block object-cover"
       />
